@@ -39,6 +39,7 @@ res:
 }
 
 err-response:
+201 --> Register Berhasil
 400 --> Input yang anda masukan tidak valid
 
 
