@@ -68,6 +68,36 @@ err-response:
 
 GROUP : BLOG
 [1] - Create Blog Post
+
+[POST] : {root.api}/{version}/blog/post
+
+req:
+{
+    "title": "Title Blog",
+    "image": "image.png",
+    "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in inventore maxime rem voluptates ratione harum voluptate molestias temporibus eum veritatis iste, culpa accusantium placeat sunt, ut labore est ea."
+}
+
+res:
+{
+    "message": "Create Blog Post Success",
+    "data": {
+        "post_id": 1,
+        "title": "Title Blog",
+        "image": "image.png",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in inventore maxime rem voluptates ratione harum voluptate molestias temporibus eum veritatis iste, culpa accusantium placeat sunt, ut labore est ea.",
+        "created_at": "06/10/2020",
+        "author": {
+            "uid": 1,
+            "name": "Dede Saepulloh"
+        }
+    }
+}
+
+err-response:
+201 --> Blog Post Berhasil Dibuat
+400 --> Input yang anda masukan tidak valid
+
 [2] - Get Blog Post
 [3] - Update Blog Post
 [4] - Delete Blog Post
