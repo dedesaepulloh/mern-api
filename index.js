@@ -30,7 +30,7 @@ app.use((error, req, res, next) => {
     })
 });;
 
-mongoose.connect('mongodb+srv://dedesaepulloh:WqMBfBD4P7L8ni6e@cluster0.ukq22.mongodb.net/<dbname>?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://dedesaepulloh:WqMBfBD4P7L8ni6e@cluster0.ukq22.mongodb.net/blog?retryWrites=true&w=majority')
 .then(() => {
     app.listen(4000, () => console.log('Connection Success'));
 })
