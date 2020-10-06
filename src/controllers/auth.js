@@ -14,4 +14,21 @@ exports.register = (req, res, next) => {
     }
     
     res.status(201).json(result);
+    next();
+}
+
+exports.login = (req, res, next) => {
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const result = {
+        message: "Login Success",
+        data: {
+            uid: 1,
+            email: email
+        }
+    }
+
+    res.status(201).json(result);
+    next();
 }

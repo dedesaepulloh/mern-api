@@ -63,6 +63,7 @@ res:
 }
 
 err-response:
+201 --> Login Berhasil
 400 --> Input yang anda masukan tidak valid
 
 GROUP : BLOG
