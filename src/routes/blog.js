@@ -12,6 +12,8 @@ router.post('/post', [
     body('body').isLength({min: 5}).withMessage('input body tidak sesuai')], 
     blogController.createBlogPost);
 
-router.get('/posts', blogController.getAllBlogPost)
+router.get('/posts', blogController.getAllBlogPost);
+
+router.get('/post/:postId', blogController.getBlogPostById);
 
 module.exports = router;
