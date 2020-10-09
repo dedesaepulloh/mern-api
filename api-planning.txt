@@ -39,7 +39,7 @@ res:
 }
 
 err-response:
-201 --> Register Berhasil
+201 --> Register Success
 400 --> Input yang anda masukan tidak valid
 
 
@@ -63,7 +63,7 @@ res:
 }
 
 err-response:
-201 --> Login Berhasil
+201 --> Login Success
 400 --> Input yang anda masukan tidak valid
 
 GROUP : BLOG
